@@ -1,3 +1,3 @@
 select *
-from {{ ref('my_second_dbt_model') }}
-limit 10
+from {{ source('demo', 'bike') }}
+limit 101
